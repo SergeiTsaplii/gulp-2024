@@ -9,6 +9,11 @@ const filePaths = {
     dist: `${buildFolder}/`,
     watch: `${srcFolder}/**/*/html`,
   },
+  styles: {
+    src: `${srcFolder}/scss/*.scss`,
+    dist: `${buildFolder}/css/`,
+    watch: `${srcFolder}/scss/**/*.scss`,
+  },
   buildFolder,
   srcFolder,
   projectDirName: path.basename(path.resolve()),

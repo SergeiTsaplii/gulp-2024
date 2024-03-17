@@ -1,1 +1,4 @@
-{ "*.js": "eslint" }
+{
+  "*.js": "eslint --fix",
+  "*.scss": "stylelint"
+}
