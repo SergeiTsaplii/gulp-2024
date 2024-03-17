@@ -19,6 +19,11 @@ const filePaths = {
     dist: `${buildFolder}/js/`,
     watch: `${srcFolder}/js/**/*.js`,
   },
+  images: {
+    src: [`${srcFolder}/images/**/*`, `!${srcFolder}/images/sprites/*.svg`, `!${srcFolder}/images/favicon/*.*`],
+    dist: `${buildFolder}images/`,
+    watch: `${srcFolder}/images/**/*`,
+  },
   buildFolder,
   srcFolder,
   projectDirName: path.basename(path.resolve()),
