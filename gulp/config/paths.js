@@ -31,7 +31,7 @@ const filePaths = {
   },
   fonts: {
     src: `${srcFolder}/fonts/`,
-    fonts: `${srcFolder}/scss/base/_fonts.scss`,
+    fontsFile: `${srcFolder}/scss/base/_fonts.scss`,
     dist: `${buildFolder}/fonts/`,
   },
   srcFolder,
