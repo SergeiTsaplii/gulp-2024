@@ -34,6 +34,10 @@ const filePaths = {
     fontsFile: `${srcFolder}/scss/base/_fonts.scss`,
     dist: `${buildFolder}/fonts/`,
   },
+  favicons: {
+    src: `${srcFolder}/images/favicon/*.{jpg,jpeg,png,svg}`,
+    dist: `${buildFolder}/images/favicons/`,
+  },
   srcFolder,
   buildFolder,
   projectDirName: path.basename(path.resolve()),
