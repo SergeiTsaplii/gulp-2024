@@ -40,6 +40,7 @@ const filePaths = {
   },
   resources: {
     src: `${srcFolder}/resources/**/*`,
+    watch: `${srcFolder}/resources/**/*`,
     dist: `${buildFolder}/resources/`,
   },
   srcFolder,
