@@ -24,6 +24,11 @@ const filePaths = {
     dist: `${buildFolder}images/`,
     watch: `${srcFolder}/images/**/*`,
   },
+  sprites: {
+    src: `${srcFolder}/images/sprites/*.svg`,
+    dist: `${buildFolder}/images/sprites`,
+    watch: `${srcFolder}/images/sprites/*.svg`,
+  },
   buildFolder,
   srcFolder,
   projectDirName: path.basename(path.resolve()),
