@@ -29,8 +29,13 @@ const filePaths = {
     dist: `${buildFolder}/images/sprites`,
     watch: `${srcFolder}/images/sprites/*.svg`,
   },
-  buildFolder,
+  fonts: {
+    src: `${srcFolder}/fonts/`,
+    fonts: `${srcFolder}/scss/base/_fonts.scss`,
+    dist: `${buildFolder}/fonts/`,
+  },
   srcFolder,
+  buildFolder,
   projectDirName: path.basename(path.resolve()),
   ftp: '',
 };
