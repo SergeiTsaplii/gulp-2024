@@ -38,6 +38,10 @@ const filePaths = {
     src: `${srcFolder}/images/favicon/*.{jpg,jpeg,png,svg}`,
     dist: `${buildFolder}/images/favicons/`,
   },
+  resources: {
+    src: `${srcFolder}/resources/**/*`,
+    dist: `${buildFolder}/resources/`,
+  },
   srcFolder,
   buildFolder,
   projectDirName: path.basename(path.resolve()),
