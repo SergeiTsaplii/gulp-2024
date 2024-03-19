@@ -21,7 +21,7 @@ const filePaths = {
   },
   images: {
     src: [`${srcFolder}/images/**/*`, `!${srcFolder}/images/sprites/*.svg`, `!${srcFolder}/images/favicon/*.*`],
-    dist: `${buildFolder}images/`,
+    dist: `${buildFolder}/images/`,
     watch: `${srcFolder}/images/**/*`,
   },
   sprites: {
