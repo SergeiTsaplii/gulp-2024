@@ -14,7 +14,7 @@ const html = (isBuild) => src(filePaths.html.src)
     prefix: '@@',
     basepath: '@file',
   }))
-  .pipe(plugins.replace(/(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\\/'"]+(\/))?([^'"]*)\1/gi, '$1./$4$5$7$1'))
+  .pipe(plugins.replace(/(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\\/'"]+(\/))?([^'"]*)\1/gi, '$1$4$5$7$1'))
   .pipe(plugins.if(isBuild, plugins.replace('.css', '.min.css')))
   .pipe(plugins.if(isBuild, plugins.replace('.js', '.min.js')))
   .pipe(plugins.if(isBuild, avifWebpHtml()))

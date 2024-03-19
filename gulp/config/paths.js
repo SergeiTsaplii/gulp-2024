@@ -7,7 +7,7 @@ const filePaths = {
   html: {
     src: `${srcFolder}/html/*.html`,
     dist: `${buildFolder}/`,
-    watch: `${srcFolder}/**/*/html`,
+    watch: `${srcFolder}/**/*.html`,
   },
   styles: {
     src: `${srcFolder}/scss/*.scss`,
