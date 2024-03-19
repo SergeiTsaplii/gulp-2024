@@ -1,5 +1,5 @@
 import pkg from 'gulp';
-import imagemin from 'gulp-imagemin';
+import imagemin, { gifsicle, mozjpeg, optipng } from 'gulp-imagemin';
 import avif from 'imagemin-avif';
 import webp from 'imagemin-webp';
 import extReplace from 'gulp-ext-replace';
@@ -26,9 +26,9 @@ const images = (isBuild) => src(filePaths.images.src)
   .pipe(plugins.if(isBuild, src(filePaths.images.src)))
   .pipe(plugins.if(isBuild, plugins.newer(filePaths.images.dist)))
   .pipe(plugins.if(isBuild, imagemin([
-    imagemin.gifsicle({ interlaced: true }),
-    imagemin.mozjpeg({ quality: 85, progressive: true }),
-    imagemin.optipng({ optimizationLevel: 5 }),
+    gifsicle({ interlaced: true }),
+    mozjpeg({ quality: 85, progressive: true }),
+    optipng({ optimizationLevel: 5 }),
   ], {
     verbose: true,
   })))
