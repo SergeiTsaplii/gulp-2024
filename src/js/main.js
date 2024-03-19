@@ -1,3 +1,2 @@
-import avifWebpSupports from './helpers/avifWebpSupports.js';
-
-avifWebpSupports();
+import 'focus-visible';
+import './helpers/helpers.js';
