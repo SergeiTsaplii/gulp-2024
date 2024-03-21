@@ -65,6 +65,8 @@
   },
   "dependencies": {
     "focus-visible": "^5.2.0",
+    "inputmask": "^5.0.8",
+    "just-validate": "^4.3.0",
     "normalize.css": "^8.0.1",
     "vanilla-lazyload": "^17.8.8"
   }
